@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech – RemotePartnersAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text-balance { text-wrap: balance; }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Nav -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-lg font-semibold tracking-tight text-white hover:text-brand-400 transition-colors">
+        RemotePartners<span class="text-brand-400">AI</span>
+      </a>
+      <ul class="flex items-center gap-6 sm:gap-8">
+        <li><a href="index.html" class="text-slate-300 hover:text-white transition-colors font-medium">Home</a></li>
+        <li><a href="index.html#services" class="text-slate-300 hover:text-white transition-colors font-medium">Services</a></li>
+        <li><a href="tech.html" class="text-slate-300 hover:text-white transition-colors font-medium">Tech</a></li>
+        <li><a href="index.html#contact" class="text-slate-300 hover:text-white transition-colors font-medium">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page content -->
+  <main class="pt-16">
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+      <p class="font-mono text-brand-400 text-sm tracking-wider uppercase mb-4">Our stack</p>
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-8">
+        How we run your automation
+      </h1>
+
+      <div class="space-y-12">
+        <div>
+          <h2 class="text-xl font-semibold text-white mb-3">Managed VPS Stack</h2>
+          <p class="text-slate-400 leading-relaxed mb-4">
+            We host and maintain a single, reliable stack so you don’t have to. Everything runs on our managed VPS:
+          </p>
+          <ul class="space-y-2 text-slate-400">
+            <li class="flex items-start gap-2">
+              <span class="text-brand-400 font-mono">→</span>
+              <span><strong class="text-slate-300">Chatwoot</strong> — Live chat and support, so customers (and your team) can talk to the AI agent or a human from one place.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-brand-400 font-mono">→</span>
+              <span><strong class="text-slate-300">n8n</strong> — Workflow automation that connects your tools and powers the AI agent’s actions.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-brand-400 font-mono">→</span>
+              <span><strong class="text-slate-300">Custom code</strong> — Integrations, APIs, and logic we build specifically for your use case.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="border-t border-slate-800 pt-12">
+          <h2 class="text-xl font-semibold text-white mb-3">Human-in-the-Middle verification</h2>
+          <p class="text-slate-400 leading-relaxed">
+            AI handles the heavy lifting; humans confirm the decisions that matter. Before sensitive or high-impact actions run, a person can review, approve, or adjust. You get the speed of automation with the certainty of human oversight.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <a
+          href="index.html#contact"
+          class="inline-flex items-center gap-2 rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-400 transition-colors"
+        >
+          Talk to us about your stack
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chatwoot -->
+  <script>
+    window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":"Chat with us"};
+    (function(d,t) {
+      var BASE_URL="https://chat.remotepartnersai.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'VoyWHnX8jRLZDKeUJfKnNoGw',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+</body>
+</html>

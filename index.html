@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RemotePartnersAI – AI Efficiency. Human Certainty.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text-balance { text-wrap: balance; }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Nav -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-lg font-semibold tracking-tight text-white hover:text-brand-400 transition-colors">
+        RemotePartners<span class="text-brand-400">AI</span>
+      </a>
+      <ul class="flex items-center gap-6 sm:gap-8">
+        <li><a href="index.html" class="text-slate-300 hover:text-white transition-colors font-medium">Home</a></li>
+        <li><a href="index.html#services" class="text-slate-300 hover:text-white transition-colors font-medium">Services</a></li>
+        <li><a href="tech.html" class="text-slate-300 hover:text-white transition-colors font-medium">Tech</a></li>
+        <li><a href="index.html#contact" class="text-slate-300 hover:text-white transition-colors font-medium">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main class="pt-16">
+    <section class="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center">
+      <p class="font-mono text-brand-400 text-sm sm:text-base tracking-wider uppercase mb-4">Automation with oversight</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance max-w-4xl mx-auto leading-[1.1]">
+        AI Efficiency.<br />
+        <span class="text-slate-400">Human Certainty.</span>
+      </h1>
+      <p class="mt-6 text-slate-400 text-lg sm:text-xl max-w-xl mx-auto">
+        We combine powerful AI agents with human verification so you get speed and reliability.
+      </p>
+      <a
+        href="#test-agent"
+        class="mt-10 inline-flex items-center gap-2 rounded-lg bg-brand-500 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-500/25 hover:bg-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2 focus:ring-offset-slate-950 transition-colors"
+      >
+        Test AI Agent
+      </a>
+    </section>
+
+    <!-- Services anchor -->
+    <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <h2 class="text-2xl font-semibold text-slate-300 mb-8">What we offer</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-xl border border-slate-800 bg-slate-900/50 p-6">
+          <h3 class="font-semibold text-white mb-2">Managed VPS Stack</h3>
+          <p class="text-slate-400 text-sm">Chatwoot, n8n, and custom code on a single, maintained stack.</p>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900/50 p-6">
+          <h3 class="font-semibold text-white mb-2">Human-in-the-Middle</h3>
+          <p class="text-slate-400 text-sm">Critical decisions verified by humans before execution.</p>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900/50 p-6 sm:col-span-2 lg:col-span-1">
+          <h3 class="font-semibold text-white mb-2">Custom Integrations</h3>
+          <p class="text-slate-400 text-sm">Workflows and agents tailored to your processes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact anchor -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-slate-800">
+      <h2 class="text-2xl font-semibold text-slate-300 mb-4">Get in touch</h2>
+      <p class="text-slate-400 max-w-lg">
+        Use the chat widget to talk to us, or reach out for a demo of our AI agent and human verification flow.
+      </p>
+    </section>
+
+    <!-- Test AI Agent anchor (for button) -->
+    <section id="test-agent" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-slate-800">
+      <h2 class="text-2xl font-semibold text-slate-300 mb-4">Try our AI agent</h2>
+      <p class="text-slate-400 max-w-lg mb-6">
+        Click “Chat with us” in the bottom-right to start a conversation with our AI agent. A human can step in when needed.
+      </p>
+    </section>
+  </main>
+
+  <!-- Chatwoot -->
+  <script>
+    window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":"Chat with us"};
+    (function(d,t) {
+      var BASE_URL="https://chat.remotepartnersai.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'VoyWHnX8jRLZDKeUJfKnNoGw',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+</body>
+</html>
